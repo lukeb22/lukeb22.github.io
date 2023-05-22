@@ -26,7 +26,7 @@
 .main{
     width:100%;
     margin:0;
-    background:center url(bg.png);
+    background:center url(https://github.com/lukeb22/lukeb22.github.io/tree/main/media/bg.png);
     overflow-x:hidden;
 }
 
@@ -48,7 +48,7 @@
 .fruit-bowl-main-section-2{
     width:100%;
     height:675px;
-    background: center url(bg_1.png);
+    background: center url(https://github.com/lukeb22/lukeb22.github.io/tree/main/media/bg_1.png);
 }
 
 /* Fruit Bowl Section 3 */
@@ -83,7 +83,7 @@
 .character-sprite-main-section-2{
     width:100%;
     height:1300px;
-    background: center url(bg_2.png);
+    background: center url(https://github.com/lukeb22/lukeb22.github.io/tree/main/media/bg_2.png);
 }
 
 /* Character Sprite Section 3 */
@@ -120,7 +120,6 @@
 /* Header/Footer Text*/
 #header, #footer{
     font-family:'Source Sans Pro';
-    src: url("../lukeb22.github.io/Source Sans Pro.otf") format('opentype');
     font-size:1em;
     font-weight:600;
     margin-top:0px;
