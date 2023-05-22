@@ -1,0 +1,561 @@
+@font-face {
+    font-family:'Open Sans SemiCondensed';
+    src: url(fonts/OpenSans_SemiCondensed-ExtraBoldItalic.ttf) format('truetype'),
+         url(fonts/opensans_semicondensed-extrabolditalic-webfont.woff) format('woff2'),
+         url(fonts/opensans_semicondensed-extrabolditalic-webfont.woff2) format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:'Source Sans Pro';
+    src: url(fonts/SourceSansPro-Regular.ttf) format('truetype'),
+         url(fonts/sourcesanspro-regular-webfont.woff) format('woff2'),
+         url(fonts/sourcesanspro-regular-webfont.woff2) format('woff');
+    font-weight:bold;
+    font-style:italic;
+}
+
+@font-face {
+    font-family:'Source Sans Pro';
+    src: url(fonts/SourceSansPro-SemiBold.ttf) format('truetype'),
+         url(fonts/sourcesanspro-semibold-webfont.woff) format('woff2'),
+         url(fonts/sourcesanspro-semibold-webfont.woff2) format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/* Main BG */
+.main{
+    width:100%;
+    margin:0;
+    background:center url(media/bg.png);
+    overflow-x:hidden;
+}
+
+/* Title Section */
+.title-main{
+    width:100%;
+    height:950px;
+}
+
+/* Fruit Bowl Section 1 */
+.fruit-bowl-main-section-1{
+    width:100%;
+    height:725px;
+    padding:80px;
+    background: #0D0D0D;
+}
+
+/* Fruit Bowl Section 2 */
+.fruit-bowl-main-section-2{
+    width:100%;
+    height:675px;
+    background: center url(media/bg_1.png);
+}
+
+/* Fruit Bowl Section 3 */
+.fruit-bowl-main-section-3{
+    width:100%;
+    height:350px;
+    background: #0D0D0D;
+}
+
+/* Divider */
+.section-divider{
+    width:100%;
+    height:470px;
+}
+
+#fruit-bowl-divider-banner{
+    position:absolute;
+    width:2545px;
+    margin-left:-70px;
+    margin-top:165px;
+}
+
+/* Character Sprite Section 1 */
+.character-sprite-main-section-1{
+    width:100%;
+    height:600px;
+    padding:80px;
+    background: #0D0D0D;
+}
+
+/* Character Sprite Section 2 */
+.character-sprite-main-section-2{
+    width:100%;
+    height:1300px;
+    background: center url(media/bg_2.png);
+}
+
+/* Character Sprite Section 3 */
+.character-sprite-main-section-3{
+    width:100%;
+    height:1350px;
+    background: #0D0D0D;
+}
+
+/* End Section */
+.end-main{
+    width:100%;
+    height:750px;
+    margin:0px;
+}
+
+/* Header */
+.header-main{
+    z-index:100;
+    width:1920px;
+    background-color: black;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+.footer-main{
+    z-index:100;
+    width:1920px;
+    height:100px;
+    background-color: black;
+    box-shadow: 0 -10px 30px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Header/Footer Text*/
+#header, #footer{
+    font-family:'Source Sans Pro';
+    font-size:1em;
+    font-weight:600;
+    margin-top:0px;
+    padding:15px;
+    color:white;
+}
+
+/* Header/Footer Left Text*/
+#header-left, #footer-left{
+    text-align:center;
+    padding-right:755px;
+}
+
+/* Header/Footer Middle Text */
+#header-center, #footer-center{
+    text-align:center;
+    padding-right:535px;
+}
+
+/* Header/Footer Right Text */
+#header-right, #footer-right{
+    text-align:center;
+}
+
+/* Title Circles */
+#title-circle-1{
+    height: 1510px;;
+    width: 1510px;
+    position:absolute;
+    z-index:-3;
+    background-color: #00B050;
+    opacity:0.5;
+    border-radius: 50%;
+    margin-left:-500px;
+    margin-top:-765px;
+}
+
+#title-circle-2{
+    height: 930px;
+    width: 930px;
+    position:absolute;
+    z-index:-1;
+    background-color: #00B050;
+    opacity:0.5;
+    border-radius: 50%;
+    margin-left:1475px;
+    margin-top:-850px;
+    overflow-x: hidden;
+}
+
+#title-circle-3{
+    position:absolute;
+    height: 450px;
+    width: 450px;
+    z-index:-1;
+    background-color: #00B050;
+    opacity:0.5;
+    border-radius: 50%;
+    margin-left:1170px;
+    margin-top:300px;
+}
+
+/*Title Images*/
+#fruit-bowl-title-image{
+    position:absolute;
+    z-index:-2;
+    width:640px;
+    margin-left:900px;
+    margin-top:-130px;
+}
+
+#character-sprite-title-image{
+    position:absolute;
+    width:420px;
+    margin-left:1330px;
+    margin-top:140px;
+}
+
+/* Title Label */
+#title-label{
+    font-family:'Source Sans Pro';
+    font-size:1.5em;
+    font-weight:bold;
+    font-style:italic;
+    width:400px;
+    margin-left:185px;
+    margin-top:175px;
+    margin-bottom:0;
+    padding:10px 20px;
+    text-align:center;
+    color:white;
+    background: linear-gradient(0deg, #00462A 0%, #00A307 100%);
+    box-shadow: 6px 8px rgba(0, 0, 0, 0.25);
+    border-radius:50px;
+    
+}
+
+/* Title */
+#title{
+    font-family:'Open Sans SemiCondensed';
+    font-size:8.5em;
+    font-style:italic;
+    width:fit-content;
+    line-height: 175px;
+    margin-left:185px;
+    margin-top:40px;
+    margin-bottom:0;
+    color:black;
+}
+
+/* Fruit Bowl Section */
+#fruit-bowl-animated-loop{
+    position:absolute;
+    margin-top:-125px;
+    margin-left:10px;
+    width:800px;
+    height:800px;
+    border-radius:125px;
+}
+
+#heading-fruit-bowl{
+    font-family:'Open Sans SemiCondensed';
+    font-size:5.3em;
+    font-style:italic;
+    position:static;
+    width:449px;
+    text-align:center;
+    margin-bottom:0;
+    margin-top:30px;
+    margin-left:1035px;
+    border-style:double;
+    border-width: 10px;
+    border-color:#F25600;
+    border-radius:100px;
+    padding:20px 50px;
+    color:white;
+}
+
+#fruit-bowl-main-section-1-p1{
+    font-family:'Source Sans Pro';
+    font-size:1.3em;
+    position: static;
+    margin-left:1060px;
+    padding-top:75px;
+    width:525px;
+    text-align:center;
+    line-height:30px;
+    color:white;
+}
+
+#fruit-bowl-main-section-2-p1{
+    font-family:'Source Sans Pro';
+    font-size:1.3em;
+    position: static;
+    margin:0;
+    margin-left:175px;
+    padding-top:135px;
+    width:430px;
+    text-align:left;
+    line-height:30px;
+    color:white;
+}
+
+#fruit-bowl-main-section-2-p2{
+    font-family:'Source Sans Pro';
+    font-size:1.3em;
+    position: static;
+    margin:0;
+    margin-left:200px;
+    padding-top:100px;
+    width:438px;
+    text-align:left;
+    line-height:30px;
+    color:white;
+}
+
+#fruit-bowl-main-section-2-image{
+    position:absolute;
+    margin-left:775px;
+    margin-top:580px;
+    width:1500px;
+}
+
+#fruit-bowl-main-section-3-p1{
+    font-family:'Source Sans Pro';
+    font-size:1.3em;
+    position: static;
+    margin:0;
+    margin-left:275px;
+    padding-top:130px;
+    width:450px;
+    text-align:center;
+    line-height:30px;
+    color:white;
+}
+
+/* Character Sprite Section */
+#heading-character-sprite{
+    font-family:'Open Sans SemiCondensed';
+    font-size:5.3em;
+    font-style:italic;
+    color:white;
+    width:652px;
+    margin-bottom:0px;
+    margin-top:30px;
+    margin-left:35px;
+    border-style:double;
+    border-width: 10px;
+    border-color:#008AF2;
+    border-radius:100px;
+    padding:20px 50px;
+}
+
+#character-sprite-animated-loop{
+    position:absolute;
+    margin-left:925px;
+    margin-top:-125px;
+    width:800px;
+    height:500px;
+    border-radius:75px;
+    
+}
+
+#character-sprite-main-section-1-p1{
+    font-family:'Source Sans Pro';
+    font-size:1.3em;
+    position: static;
+    margin-left:135px;
+    padding-top:75px;
+    width:575px;
+    text-align:center;
+    line-height:30px;
+    color:white;
+}
+
+#character-sprite-main-section-2-p1{
+    font-family:'Source Sans Pro';
+    font-size:1.3em;
+    position: static;
+    margin:0;
+    margin-left:1175px;
+    padding-top:155px;
+    width:440px;
+    text-align:left;
+    line-height:30px;
+    color:black;
+}
+
+#character-sprite-main-section-2-p1-list{
+    font-family:'Source Sans Pro';
+    font-size:1.3em;
+    position: static;
+    margin:0;
+    margin-left:1175px;
+    padding-top:30px;
+    width:275px;
+    text-align:left;
+    line-height:30px;
+    color:black;
+}
+
+#character-sprite-main-section-2-p2{
+    font-family:'Source Sans Pro';
+    font-size:1.3em;
+    position: static;
+    margin:0;
+    margin-left:1200px;
+    padding-top:90px;
+    width:520px;
+    text-align:left;
+    line-height:30px;
+    color:black;
+}
+
+#character-sprite-main-section-2-p3{
+    font-family:'Source Sans Pro';
+    font-size:1.3em;
+    position: static;
+    margin:0;
+    margin-left:1185px;
+    padding-top:90px;
+    width:560px;
+    text-align:left;
+    line-height:30px;
+    color:black;
+}
+
+#character-sprite-main-section-2-p4{
+    font-family:'Source Sans Pro';
+    font-size:1.3em;
+    position: static;
+    margin:0;
+    margin-left:1150px;
+    padding-top:90px;
+    width:550px;
+    text-align:left;
+    line-height:30px;
+    color:black;
+}
+
+#character-sprite-main-section-2-image{
+    position:absolute;
+    margin-left:-615px;
+    margin-top:590px;
+    width:1550px;
+}
+
+#character-sprite-main-section-3-p1{
+    font-family:'Source Sans Pro';
+    font-size:1.3em;
+    position: static;
+    margin:0;
+    margin-left:685px;
+    padding-top:175px;
+    width:550px;
+    text-align:center;
+    line-height:30px;
+    color:white;
+}
+
+#character-sprite-animated-loop-idle{
+    position:absolute;
+    margin-left:420px;
+    margin-top:160px;
+    width:300px;
+    height:300px;
+    border-radius:50px;
+}
+
+#character-sprite-animated-loop-walk{
+    position:absolute;
+    margin-left:800px;
+    margin-top:160px;
+    width:300px;
+    height:300px;
+    border-radius:50px;
+}
+
+#character-sprite-animated-loop-run{
+    position:absolute;
+    margin-left:1180px;
+    margin-top:160px;
+    width:300px;
+    height:300px;
+    border-radius:50px;
+}
+
+#character-sprite-animated-loop-jump{
+    position:absolute;
+    margin-left:330px;
+    margin-top:540px;
+    width:300px;
+    height:300px;
+    border-radius:50px;
+}
+
+#character-sprite-animated-loop-fall{
+    position:absolute;
+    margin-left:710px;
+    margin-top:540px;
+    width:300px;
+    height:300px;
+    border-radius:50px;
+}
+
+#character-sprite-animated-loop-die{
+    position:absolute;
+    margin-left:1090px;
+    margin-top:540px;
+    width:480px;
+    height:300px;
+    border-radius:50px;
+}
+
+/* End Section */
+.end-main-circles{
+    overflow-y: hidden;
+}
+
+#character-sprite-end-banner{
+    position:absolute;
+    width:1980px;
+    margin-left:-45px;
+    margin-top:165px;
+}
+
+#end-circle-1{
+    position:absolute;
+    height: 500px;
+    width: 500px;
+    z-index:-1;
+    background-color: #00B050;
+    opacity:0.5;
+    border-radius: 50%;
+    margin-left:-155px;
+    margin-top:-130px;
+}
+
+#end-circle-2{
+    position:absolute;
+    z-index:-1;
+    width:700px;
+    margin-left:1330px;
+    margin-top:340px;
+}
+
+#github-profile-link-image{
+    position:absolute;
+    width:400px;
+    margin-left:780px;
+    margin-top:425px;
+}  
+
+/* Fruit Bowl + Character Sprite Links (Section 1) */
+.fruit-bowl-main a, .character-sprite-main-section-1 a{
+    font-family:'Source Sans Pro';
+    font-size:1em;
+    color:#0CD67B;
+    text-decoration: none;
+}
+
+/* Character Sprite Links (Section 2) */
+.character-sprite-main-section-2 a{
+    font-family:'Source Sans Pro';
+    font-size:1em;
+    color:#008650;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#github-profile-link:hover{
+    opacity:0.75;
+}
