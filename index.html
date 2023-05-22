@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practical Exercise 2D/3D - DGA1020</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body class="main">
+
+        <!-- Header -->
+        <div class="header-main">
+
+            <h6 id="header">
+                <span id="header-left">Luke Bonett</span>
+                <span id="header-center">CW4 - Practical Exercise UX/UI</span>
+                <span id="header-right">DGA1020 - Applied Software Practices</span> 
+            </h6>
+
+        </div>
+
+        <!-- Title Section -->
+        <div class="title-main">
+
+            <div class="title-circles">
+
+                <div id="title-circle-1"></div>
+                <div id="title-circle-2"></div>
+                <div id="title-circle-3"></div>
+                
+
+            </div>
+
+                <img src="fruit_bowl_medium.png" id="fruit-bowl-title-image">
+
+                <img src="character_sprite_large.png" id="character-sprite-title-image">
+            
+            <div class="title-text">
+
+                <h5 id="title-label">DGA1020 - Applied Software Practices</h5>
+                <h1 id="title">Practical<br>Exercise<br>2D/3D</h1>
+
+            </div>
+
+
+        </div>
+
+        <!-- Fruit Bowl Section -->
+        <div class="fruit-bowl-main">
+            
+            <img src="fruit_bowl_large.png" id="fruit-bowl-main-section-2-image">
+
+            <!-- section 1 -->
+            <div class="fruit-bowl-main-section-1">
+
+                <div>
+                    <video autoplay muted loop id="fruit-bowl-animated-loop">
+                        <source src="fruit_bowl_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <h2 id="heading-fruit-bowl">3D Fruit Bowl</h2>
+                <p id="fruit-bowl-main-section-1-p1">Part one for this project was to get to know the basics of modelling and sculpting in <a href="https://www.blender.org" target="_blank">Blender</a>, by creating a simple turntable of a fruit bowl and some fruit to go with it.</p>
+
+            </div>
+
+            <!-- section 2 -->
+            <div class="fruit-bowl-main-section-2">
+                
+                <p id="fruit-bowl-main-section-2-p1">I created the bowl after experimenting a bit with modelling and layering multiple objects, until I got the result of a unique flowery fruit bowl.</p>
+                <p id="fruit-bowl-main-section-2-p2">For the fruit I aimed to include a variety of fruit shapes (oranges, bananas and a bunch of grapes) that would settle inside the bowl and make for an interesting composition, and I sculpted a few details like the grape stem and the surface of the oranges to add some contrast between the fruit and the bowl.</p>
+
+            </div>
+
+            <!-- section 3 -->
+            <div class="fruit-bowl-main-section-3">
+
+                <p id="fruit-bowl-main-section-3-p1">This was a fun exercise on the whole to familiarise myself more with 3D modelling basics, and I'm pretty happy with the final result.</p>
+
+            </div>       
+
+        </div>
+
+        <!-- Section Divider -->
+        <div class="section-divider">
+
+            <img src="fruit_bowl_banner.png" id="fruit-bowl-divider-banner">
+
+        </div>
+
+        <!-- Character Sprite Section -->
+        <div class="character-sprite-main">
+
+            <img src="sprite_sheet.png" id="character-sprite-main-section-2-image">
+
+            <!-- section 1 -->
+            <div class="character-sprite-main-section-1">
+
+                <video autoplay muted loop id="character-sprite-animated-loop">
+                    <source src="character_sprite_video_crop.mp4" type="video/mp4">
+                </video>
+
+                <h2 id="heading-character-sprite">2D Character Sprite</h2>
+                <p id="character-sprite-main-section-1-p1">The 2D counterpart to this exercise was to create a character sprite animation based on a certain theme, performing a series of consecutive actions. In my case, I chose to use <a href="https://www.piskelapp.com/" target="blank">Piskel</a> to animate a pixel coffee cup with a pair of legs (but no arms).</p>
+
+            </div>
+
+            <!-- section 2 -->
+            <div class="character-sprite-main-section-2">
+
+                <p id="character-sprite-main-section-2-p1">Using a 32x32 pixel canvas, the first step was to come up with a design for the character that was iconic, but not too complex, while being able to perform the following 6 actions:</p>
+                    <ul id="character-sprite-main-section-2-p1-list">
+                        <li>Idle</li>
+                        <li>Walk</li>
+                        <li>Run</li>
+                        <li>Jump (fixed + variable height)</li>
+                        <li>Fall</li>
+                        <li>Die</li>
+                    </ul>
+                <p id="character-sprite-main-section-2-p2">After some of tweaking, I settled on a square-shaped cup with beady eyes, skinny legs and a thick pair of eyebrows. I kept a simple palette of 9 colours, avoiding any excessive detail to maintain the character's overall appeal.</p>
+                <p id="character-sprite-main-section-2-p3">The image you're seeing here is a <a href="https://en.wikipedia.org/wiki/Sprite_(computer_graphics)" target="_blank">sprite sheet</a> of every single frame used to create all 6 actions, laid out from top to bottom. Each action was animated separately, focusing on fluid movement between frames (in most cases, literally) while playing around with facial expressions that seemed fit.</p>
+                <p id="character-sprite-main-section-2-p4">Lastly, I setup the sprite sheet in <a href="https://unity.com/" target="_blank">Unity</a> and created the above sequence using an animation state-manager, which allowed for tweaking frame durations, looping certain actions a number of times and playing all 6 actions back to back.</p>
+
+            </div>
+
+            <!-- section 3 -->
+            <div class="character-sprite-main-section-3">
+
+                <p id="character-sprite-main-section-3-p1">Overall, I really enjoyed the process behind this exercise, especially in terms of character design, where sometimes limiting your options for detail can help with better appeal. It's also been pretty eye-opening for potential future projects on video game development, which could be worth a shot.</p>
+
+                <video autoplay muted loop id="character-sprite-animated-loop-idle">
+                    <source src="character_sprite_video_idle.mp4" type="video/mp4">
+                </video>
+                <video autoplay muted loop id="character-sprite-animated-loop-walk">
+                    <source src="character_sprite_video_walk.mp4" type="video/mp4">
+                </video>
+                <video autoplay muted loop id="character-sprite-animated-loop-run">
+                    <source src="character_sprite_video_run.mp4" type="video/mp4">
+                </video>
+                <video autoplay muted loop id="character-sprite-animated-loop-jump">
+                    <source src="character_sprite_video_jump.mp4" type="video/mp4">
+                </video>
+                <video autoplay muted loop id="character-sprite-animated-loop-fall">
+                    <source src="character_sprite_video_fall.mp4" type="video/mp4">
+                </video>
+                <video autoplay muted loop id="character-sprite-animated-loop-die">
+                    <source src="character_sprite_video_die.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+        <!-- End Section -->
+        <div class="end-main">
+
+            <div class="end-main-circles">
+
+                <div id="end-circle-1"></div>
+                <img src="end_main_circle_large.png" id="end-circle-2">
+
+            </div>
+
+            <img src="character_sprite_banner.png" id="character-sprite-end-banner">
+            
+            <!-- profile url -->
+            <a href="https://github.com/lukeb22" target="_self" id="github-profile-link"><img src="github_profile_link_img.png" id="github-profile-link-image"></a>
+            
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer-main">
+
+            <h6 id="footer">
+
+                <span id="footer-left">Luke Bonett</span>
+                <span id="footer-center">CW4 - Practical Exercise UX/UI</span>
+                <span id="footer-right">DGA1020 - Applied Software Practices</span> 
+
+            </h6>
+
+        </div>
+
+
+    </body>
+
+</html>
